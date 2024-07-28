@@ -43,7 +43,8 @@ element = element.is_selected() // check the field/button is selected or not
 element = element.location // cmnd to get the location of the element in form of X and Y coordinates
 element = element.tag_name //cmnd to gives the tag used in particular element and returns its string value
 
-driver.refresh() // referesh the webpage 
+driver.refresh() // refresh the webpage
+#Navigation Commands
 driver.back() // navigate the browsing page backward
 driver.forward() // navigate the browsing page forward/next page
 
