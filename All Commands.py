@@ -43,7 +43,7 @@ element = element.is_selected() // check the field/button is selected or not
 element = element.location // cmnd to get the location of the element in form of X and Y coordinates
 element = element.tag_name //cmnd to gives the tag used in particular element and returns its string value
 
-driver.refresh() // referesh/reload the webpage 
+driver.refresh() // referesh the webpage 
 driver.back() // navigate the browsing page backward
 driver.forward() // navigate the browsing page forward/next page
 
@@ -59,7 +59,8 @@ drp.select_by_index("index number")
 src = driver.find_element(By.ID,"SRC Value") //using actionchains we can drag and drop the elements
 tgt = driver.find_element(By.ID,"TGT Value")
 action = ActionChains(driver)
-action.drag_and_drop(src,tgt).perform()
+drag_drop = action.drag_and_drop(src,tgt).perform()
+print(drag_drop)
 
 from selenium.webdriver.common.alert import Alert
 driver.window_handles[1] //handles popup window 
